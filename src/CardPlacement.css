@@ -1,0 +1,39 @@
+.card-container{
+    height: 100vh;
+    display: grid;
+    background-image:url(/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    grid-template: 'front' 'back';
+}
+.front{
+    justify-self: center;
+    align-self: end;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    grid-template-areas: front;
+}
+.back{
+    justify-self: center;
+    padding-left: 10vw;
+    grid-area: back;
+}
+
+@media (max-width:60em) {
+    .card-container{
+        height: auto;
+        background-image: url(/bg-main-mobile.png);
+        background-size: cover, contain;
+        grid-auto-flow: dense;
+        grid-template-areas: 'back' 'front' ;
+    }
+    .front{
+        padding: 0;
+        justify-self: start;
+    }
+    .back{
+        padding: 0;
+        align-items: start;
+        justify-self: end;
+    }
+}

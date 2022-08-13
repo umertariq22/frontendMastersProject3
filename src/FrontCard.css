@@ -1,0 +1,20 @@
+.front-card{
+    background-image: url("/bg-card-front.png");
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 447px;
+    height: 245px;
+    display: grid;
+    color:white;
+    font-size: 18px;
+}
+.card-number{
+    align-self: flex-end;
+    font-size: 35px;
+}
+.lower-portion{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    font-size: 16px;
+}

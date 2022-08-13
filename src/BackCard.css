@@ -1,0 +1,13 @@
+.back-card{
+    width: 447px;
+    height: 245px;
+    display: grid;
+    color: white;
+    font-size: 18px;
+    background-image: url("/bg-card-back.png");
+    place-items: center;
+}
+.cvv{
+    justify-self: flex-end;
+    padding-right: 60px;
+}
